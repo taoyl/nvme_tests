@@ -164,7 +164,7 @@ def main():
     if not args.debug:
         # create log directory
         td = datetime.today()
-        log_dir = '{}/{}'.format('logs', td.strftime("%Y%m%d.%H%M"))
+        log_dir = '{}/{}'.format('logs', td.strftime("%Y%m%d.%H%M%S"))
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
         log_file = '{}/{}.log'.format(log_dir, "nvme")
